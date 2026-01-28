@@ -14,7 +14,6 @@ public class GamePage {
     WebDriver driver;
     WebDriverWait wait;
 
-    // lokatori
     By startButton = By.id("startBtn");
     By winnerText = By.id("winner");
 
@@ -39,10 +38,9 @@ public class GamePage {
     public void clickCell(int index) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         int attempts = 0;
-        int maxAttempts = 25; // 25 * 200ms = 5 sekundi maksimalno čekanje
+        int maxAttempts = 25; 
 
         while (attempts < maxAttempts) {
-            // Dohvati ćelije iz DOM-a svaki put, da Selenium vidi aktualni tekst
             java.util.List<WebElement> cells = driver.findElements(By.cssSelector(".board__cell"));
 
             if (index < 0 || index >= cells.size()) {
@@ -52,7 +50,6 @@ public class GamePage {
             WebElement cell = cells.get(index);
 
             if (cell.getText().isEmpty()) {
-                // Klik pomoću JS
                 js.executeScript(
                         "arguments[0].dispatchEvent(new MouseEvent('click', {bubbles: true}))",
                         cell
