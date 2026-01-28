@@ -12,12 +12,10 @@ XO Arena je web igra **Tic-Tac-Toe** gdje igrač igra protiv AI-a. Projekt uklju
 
 
 ## Screenshots
-![Prolazni testovi]
-(pictures/testiranje.PNG)
+![Prolazni testovi](pictures/testiranje.PNG)
 
-![XO Arena gameplay]
-(pictures/game.PNG)
-*Slika prikazuje glavni ekran igre.*
+![XO Arena gameplay](pictures/game.PNG)  <!-- Slika prikazuje glavni ekran igre -->
+
 
 
 ## Autor
