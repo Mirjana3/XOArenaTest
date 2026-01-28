@@ -41,7 +41,7 @@ public class GameTests {
     public void testMakeMove() {
         gamePage.open("https://mirjana3.github.io/X-O-Arena/");
         gamePage.clickStart();
-        gamePage.clickCell(0); // klik na prvu ćeliju
+        gamePage.clickCell(0);
     }
 
     @Test(priority = 4)
